@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="screen">
+                <input type="text" id="input-text" placeholder="0" />
+            </div>
+
+            <div class="inner-wrapper">
+
+                <div class="left-wrapper">
+                    <div class="upper-operators">
+                        <button class="button double" onclick="Clear()">C</button>
+                        <button class="button" onclick="calculate('/')">&divide;</button>
+                    </div>
+                    
+                    <div class="numbers-wrapper">
+                        <div class="inner-nums-wrapper">
+                            <button class="button" onclick="calculate(7)">7</button>
+                            <button class="button" onclick="calculate(8)">8</button>
+                            <button class="button" onclick="calculate(9)">9</button>
+                        </div>
+                        <div class="inner-nums-wrapper">
+                            <button class="button" onclick="calculate(4)">4</button>
+                            <button class="button" onclick="calculate(5)">5</button>
+                            <button class="button" onclick="calculate(6)">6</button>
+                        </div>
+                        <div class="inner-nums-wrapper">
+                            <button class="button" onclick="calculate(1)">1</button>
+                            <button class="button" onclick="calculate(2)">2</button>
+                            <button class="button" onclick="calculate(3)">3</button>
+                        </div>
+                    </div>
+                    
+                    <div class="inner-nums-wrapper">
+                        <button class="button double" onclick="calculate(0)">0</button>
+                        <button class="button" onclick="calculate('.')">.</button>
+                    </div>
+                </div>
+                
+                <div class="right-wrapper">
+                    <button class="button" onclick="calculate('*')">&times;</button>
+                    <button class="button" onclick="calculate('-')">-</button>
+                    <button class="button plus" onclick="calculate('+')">+</button>
+                    <button class="button" onclick="Result()">=</button>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="./script/script.js"></script>
+    </body>
+</html>
